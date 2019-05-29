@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16sp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginTop="16sp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16sp"
+        android:text="+"
+        android:onClick="increment"/>
+    <TextView
+        android:id="@+id/quantity_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp"/>
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="-"
+        android:onClick="decrement"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Summary"
+        android:textSize="16sp"
+        android:layout_marginTop="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="16sp" />
+    <TextView
+        android:id="@+id/order_summary_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textSize="16sp"
+        android:layout_marginTop="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="26sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:layout_marginTop="16sp"
+        android:onClick="submitOrder"
+        android:layout_marginLeft="16sp"
+        />
+
+</LinearLayout>
